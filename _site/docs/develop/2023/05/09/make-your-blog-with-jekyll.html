@@ -1,0 +1,34 @@
+<p>네이버 블로그를 이용해 일상 블로그를 하고 있다. (사람들에게 보여주기 위해서라기 보다는 단순 기록용으로.)
+하지만, 왠지 네이버 블로그에는 개발 내용을 넣고 싶은 기분이 들지 않는다. 그래서 찾게 된 것이 바로 Github Page.</p>
+
+<p>내가 Github Page 를 선택하게 된 두 가지 이유.</p>
+<ol>
+  <li>무료로 사용할 수 있다.</li>
+  <li>개발 블로그로 적격이다.</li>
+</ol>
+
+<p>이제 바로 해보자.</p>
+
+<p>Github page 를 만드는 방법 (<a href="https://pages.github.com/">pages.github.com</a> )</p>
+<ol>
+  <li>{username}.github.io 이름으로 github repository 를 만든다.</li>
+  <li>terminal 에서 repository 를 clone 한다.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git clone https://github.com/username/username.github.io</code></pre></figure>
+
+<ol>
+  <li>프로젝트 폴더로 이동해서 index.html 파일을 만든다.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd </span>username.github.io
+<span class="nb">echo</span> <span class="s2">"Hello World"</span> <span class="o">&gt;</span> index.html</code></pre></figure>
+
+<ol>
+  <li>Git 에 add, commit, push 한다.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git add <span class="nt">--all</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit"</span>
+git push <span class="nt">-u</span> origin main</code></pre></figure>
+
